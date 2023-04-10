@@ -1,0 +1,261 @@
+
+:root{
+  --colorA:#bb8fe7;
+  --colorB:#d9e7f6;
+  --colorC:#f7d98c;
+  --colorD:#f78c8c;
+
+}
+
+
+
+body{
+  background-image: linear-gradient(135deg, 
+  #75bee8   ,#cf62f0,#e47c14);
+  background-size: 500%;
+   
+  }
+   
+
+ 
+#haq{
+  width: 90%; 
+  margin: 20px 5%;  
+  justify-content: center;
+}
+h1{
+ 
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 3px 2px 1px #9daef5;
+  -webkit-box-shadow: 6px 5px 24px #666666;
+  -moz-box-shadow: 6px 5px 24px #666666;
+  box-shadow: 6px 5px 24px #666666;
+  font-family: Arial;
+  color: #fafafa;
+  font-size: 27px;
+  padding: 19px;
+  margin: 20px 4px;
+  min-width: 300px;
+ text-align: center;
+  border: transparent;
+
+
+}
+#ley{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#img{
+  border-top-right-radius: 3%; 
+  border-bottom-left-radius: 0%; 
+  border-bottom-right-radius: 0%;
+
+}
+.mostarDatos {
+  
+  background: rgb(237, 86, 86); 
+  border-bottom-left-radius: 6%;
+  border-bottom-right-radius: 6%;
+  text-align: left;
+  padding: 20px 5px;
+}
+
+.unidades{
+
+ 
+  border-radius: 12px;
+  text-align: left;
+  padding: 20px 5px;
+}
+
+form label{
+  margin: 10px;
+  text-align: left;
+  text-shadow: 3px 2px 1px #9daef5;
+    font-family: Arial;
+    color: #fefefe;
+    font-size: 24px; 
+}
+
+
+section{
+    
+    
+   width: 100%;
+    height:min-content;
+    border-radius: 12px;
+  
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    justify-content: center;
+   
+    
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+ 
+ 
+  
+}
+
+.leyes a img{
+width: 100%;
+
+}
+.leyes a{
+   
+    max-width: 30vh ;
+    text-shadow: 3px 2px 1px #9daef5;
+    font-family: Arial;
+    color: #fafafa;
+    font-size: 27px;
+    text-decoration: none;  
+}   
+
+
+
+.leyes{
+    justify-content: center;
+    display: inline-block;
+   
+    min-width:100px ;
+    width:80%;
+    text-align: center;
+    cursor: pointer;
+    margin: 10%; 
+    border-radius: 20px;
+    transition: all 0.5s
+}
+img{
+   object-fit: cover;
+    
+    border-radius: 12px;
+    position: center;
+}
+ 
+
+.green-resultado{
+    color: #9c9; 
+   }
+   
+   .red-resultado{
+     color: #ec3f3f; 
+    }
+
+ 
+    .button {
+ 
+ 
+      -webkit-border-radius: 28;
+      -moz-border-radius: 28;
+      border-radius: 28px;
+      text-shadow: 3px 2px 1px #9daef5;
+      -webkit-box-shadow: 6px 5px 24px #666666;
+      -moz-box-shadow: 6px 5px 24px #666666;
+      box-shadow: 6px 5px 24px #666666;
+      font-family: Arial;
+      color: #fafafa;
+      font-size: 27px;
+      padding: 19px;
+      margin: 20px 4px ;
+      min-width: 300px;
+      text-decoration: none;
+      border: transparent;
+      }
+      #bto-conv{
+        position: relative;   
+        padding: 5px;
+        left: 25%;
+        min-width: 200px;
+        margin-bottom: 0 
+      }
+      
+      .button:hover {
+        
+  
+        text-decoration: none;
+        cursor: pointer;
+      }
+    .unidades{
+      text-align: left;
+      min-width: 400px;
+    }
+     .def-datos{
+     /* background-color: #9c9;*/
+     text-align: end;
+     } 
+     .aling-text {
+     /* background-color: red;*/
+      align-self: left;
+      position:absolute;
+      
+      left: 0px;
+     } 
+    
+     .😬{
+      background-color: #fff;;
+      width: 200px;
+      height: 40px;
+      border :solid 1px #009dff;
+      text-align: center;
+      padding: 10px;
+      position:relative;
+      right: -250px;
+      top: -200px;
+      z-index: 3000;
+      display: block;
+     }
+      .aside-imput-prueba{
+        border-radius: 10px;
+        background-color: #939393;
+        border: 0;
+        outline:solid 1px #2079b0;
+        text-align: left;
+        color: #000;
+        padding: 10px;
+       
+        font-size: 5px;
+        -webkit-box-shadow: 6px 5px 24px #666666;
+      -moz-box-shadow: 6px 5px 24px #666666;
+      box-shadow: 6px 5px 24px #666666;
+      font-family: Arial;
+      margin:  0 ;
+      margin-bottom: 10px;
+      font-size: 20px;
+      width: 100px;
+     
+      }
+      .input-str{
+        border-radius: 5px! important;
+        outline:none;
+        border: none;
+        border-top:solid 5px #009dff;
+        background-color:transparent;
+        box-shadow:none;
+        display: block;
+        margin: 10px auto;
+    }
+    ::-webkit-input-placeholder { 
+        color: #fafafa;;
+        font-style: italic;
+      }
+      :-moz-placeholder { 
+        color: #fafafa;;  
+        font-style: italic;
+      }
+      ::-moz-placeholder {  
+        color: #fafafa;;  
+        font-style: italic;
+      }
+      :-ms-input-placeholder {  
+        color: #fafafa;; 
+        font-style: italic; 
+
+      }
+  

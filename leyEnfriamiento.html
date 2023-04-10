@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+crearemos una pagina web
+-->
+
+
+
+<html>
+
+<head>
+
+  <title>Enfriamiento Newtiniano</title>
+
+
+  <meta charset="UTF-8">
+
+  <script src="https://kit.fontawesome.com/92181cd2c7.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="normalize.css" />
+  <link rel="stylesheet" type="text/css" href="styleResponsive.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="icon" type="image/png" href="images/logo2-PhotoRoom.png ">
+  <link rel="stylesheet" href="css1/bootstrap.min.css">
+</head>
+
+<body >
+ <main> 
+    <header class="d-flex flex-wrap justify-content-center py-3  border-bottom" style="background-color: rgb(237, 86, 86);" >
+      <div  class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4" style="color:white">Simulador</span>
+      </div>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page" style="background-color:dodgerblue ;">Principal</a></li>
+     
+        <li class="nav-item"><a href="teoriaEnfriamiento.html" class="nav-link "  style="color:white">¿Como se forma la ley de enfriamiento?</a></li>
+      </ul>
+    </header>
+ 
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="display: inline-block;width: 450px;  ">
+      <div   class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark  ">
+         
+        <span class="fs-4">Conversión de datos</span>
+      </div>
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <p href="#" class="bi pe-none me-2" >
+            
+             
+             
+          </p>
+          <form class="formulario-notas" action=""></form>
+          <label for="lang">Temperatura en grados</label>
+          <select class="form-select" name="temp-unidad" id="🌡️">
+            <option value="C°">Celsium</option>
+            <option value="K°">Kelvin</option>
+            <option value="F°"> Fahrenheit</option> <!-- alt 248 -->
+          </select><br>
+          <label for="lang">Unidad de Tiempo</label>
+          <select class="form-select" name="time-unidad" id="⌛">
+            <option value="sec">Segundos</option>
+            <option value="min">Minutos</option>
+            <option value="hour"> Horas</option>
+          </select>
+          <input style="margin-left: -105px "type="button" id="bto-conv" value="Convertir" class="btn btn-lg btn-primary mt-5 "   >
+          <label for="lang"></label><br><br>
+          <span class="fs-4">Tipos de datos</span>
+       
+        <div class="def-datos">
+          <br>
+          <label for="lang" class="aling-text" style="margin-top: -20px;margin-left: 15px; "  > <p>Temperatura ambiente</p></label>
+         
+          <input  style="margin-top: 10px;"type="number" id="Tamb" placeholder="" class="form-control" required="" min="0"
+            pattern="^[0-9]+"> 
+            <br>
+          <label for="lang" class="aling-text"style="margin-top: -20px;margin-left: 15px; " >Temperatura Inicial</label>
+          <input style="margin-top: 10px;"type="number" id="T0" placeholder="" class="form-control" required="" min="0"
+            pattern="^[0-9]+"> 
+            <br>
+          <label class="aling-text" style="margin-top: -20px;margin-left: 15px; " for="lang" class="aling-text">Digite un tiempo</label>
+          <input style="margin-top: 10px;"type="number" id="TimeFinal" placeholder="" class="form-control" required="" min="0"
+            pattern="^[0-9]+">  
+          <br>
+            <label for="lang" class="aling-text" style="margin-top: -20px;margin-left: 15px; ">Temp en dicho tiempo</label>
+          <input style="margin-top: 10px;" type="number" id="TempFinal" placeholder="" class="form-control" required="" min="0"
+            pattern="^[0-9]+"> 
+        </div>
+        <input style="margin-left: -1px " type="button" id="bto-enviar" value="Resolver" class="btn btn-lg btn-primary mt-5 "   >
+        
+      </form>
+  </div>
+  <article  style="margin-left: 500px;margin-top: -800px; width: 800px; display:in; ">
+    <div class="resultado"></div>
+    <div class="main-container"></div>
+    <div class="mostar-datos "></div>
+    <div class="😓"> 
+    <canvas class="my-4 w-100 chartjs-render-monitor" id="myChart" width="1060" height="447" style="display: block; width: 1060px; height: 447px;"></canvas>
+    </div>
+  </article>
+   
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="valiNubers.js"></script>
+  <script src="graficaL1.js"></script>
+
+ 
+</body>
+ 
+
+</html>

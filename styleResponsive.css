@@ -1,0 +1,290 @@
+
+
+
+ 
+
+
+ 
+
+
+.main-conteiner{
+flex-basis:100%;
+background-color: #999;
+height: auto;
+text-align: center;
+padding: 40px;
+}
+
+body{
+  margin: 0;
+   font-family: 'Lucida Sans';
+      
+   
+    }
+
+header{
+
+
+    padding-left: 0px;/* se le indica a que es la distancia entre el texto y la caja*/
+    padding-right: 0px;
+    width: 100% !important ;  /* una propiedad important es la herarquia mas alta de las propiedades*/ 
+    height: auto;
+
+   
+    display: block;
+    
+    z-index: 100;
+    }
+
+    .respensive_item_encabezado{
+  display: none;
+    }
+
+.nav_encabezado  ul li a {
+    /*   transform: rotate(-20deg);   le agragamos rotacion */
+    padding: 18px 15px;     
+  text-decoration: none; /* le quitamos el sub rayado a los titulos*/    
+  padding: auto;
+ 
+  display: inline-block;
+  }
+  .container{
+    /* border: 2px solid #000000;*/
+    width: 800px;  
+    margin:auto;
+ 
+     text-align:center;
+    
+     display: inline;
+   
+ }
+  
+  .nav_encabezado {
+    
+    text-align: center;
+  margin: 0px;
+  margin-top: 15px;
+  padding: 0px;    
+  }
+  
+.nav_encabezado  ul li:hover{  /*-AQUI SE AGREGARÁ UNA PSEUDOCLASE (mouse)*/
+        /* le agregamos o cambiamos color a fondo */
+   
+  
+}
+.nav_encabezado  ul li   {/* se le indica a que contenedor  irá el cambio por decendencia y clase*/
+
+   /* box-shadow: 1px 2px 10px 0 #000000 ;  le damos sombra a la caja*/
+    
+  border-radius: 10px; /* le agregamos borde redondo*/  
+ 
+   
+    text-align: center;
+   line-height: normal;
+   
+   
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    font-size:12px;
+    font-family:Arial;
+    font-weight:bold;
+    font-style:italic;
+    text-transform:capitalize;
+ 
+    overflow: hidden;/* oculta el contenido que queda fuera de la caja tambien puede scrollearlo o ajustarlo automaticalente*/
+  
+    transition: all 0.2s;/* le agragamos tiempo de trancicion */
+
+}
+
+.nav_encabezado  ul .nav_encabezado{
+    display: inline-block;
+}
+
+
+
+ .main, .aside, .footer{
+
+    padding: 15px;
+
+}  
+
+
+
+.main{
+   
+   flex-basis: 800px;
+     flex-grow: 3;
+     flex-shrink: 0;
+    min-height: 900px; 
+    display: flex;
+ 
+     
+}
+.aside{
+
+ 
+ 
+  text-align: center;  
+    flex-basis: 200px;
+     flex-grow: 1;
+     flex-shrink: 0;
+
+}
+
+.footer{
+    text-align:center;
+  position:relative;
+  bottom: 0;
+  box-sizing: border-box;/* se le indica que el tamaño de la caja no cambie con el padding osea la caja la caja conserva el tamaño dado*/
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 30px;
+ 
+    /* le damos sombra a las letras*/
+  font-size:12px;
+  font-family:'Lucida Sans';
+  font-style:italic;
+  text-transform:capitalize;
+  display: block;
+  
+ 
+  
+  
+  }
+
+
+
+
+@media only screen  and (min-width : 801px){
+    .content{
+    display: grid;
+    grid-template-rows: 80px  1fr 1fr 1fr 1fr  80px;
+    grid-template-columns: repeat(4,1fr);  
+    min-height: 105vh;
+   
+    }
+   
+
+    .header{
+       grid-column: 1/ span 5;
+    
+     }
+
+     .footer{
+        grid-row: 6/7;
+        grid-column: 1/ span 5; /* el  span es para que ocupe todo*/
+         
+     }
+    
+      .aside {
+        grid-row: 2/6;
+   
+     
+     } 
+      .main{
+        grid-row: 2/6;
+        grid-column: 2/ 6;
+     
+     }  
+
+
+}
+
+@media only screen and (max-width:800px)  {
+ 
+
+    .item_encabezado{
+    display: none;
+    }
+  
+      .nav_encabezado ul li{
+          width: 200px;
+          text-align: left;
+           
+          display: block;
+      }
+  
+      .respensive_item_encabezado {
+          margin-top: 0px;
+         width: 100%;
+         height: 55px;
+          display: block; 
+        
+        padding: 0px;
+  
+          
+      }
+      .respensive_item_encabezado ul {
+      
+          padding: 10px;
+          display: block;
+          height: 100%;
+         
+      }
+     
+        
+      .nav_barra{
+        position: relative;
+        width: auto;
+         font-size: 35px;
+          float: right;
+         padding: 6px 20px ; 
+         z-index: 1000;
+      }
+     .nav_encabezado{
+      text-align: left;
+      padding: 0;
+      height: 55px;
+      width: 100%;
+      
+     }
+    
+     .respensive_item_encabezado-content{
+      margin-top: 0px;
+      width: 100%;
+      padding: 0;
+      height: 55px;
+       display: block; 
+   
+       position: relative; 
+   z-index: 2000;
+     }
+    
+    .container  {
+      position: absolute;
+      left: 0;
+      height: calc(100vh-60px);
+      top: -1000px;
+      
+      height:100px
+      
+    }
+  
+  .respensive_item_encabezado:hover > .container{
+    transition: 0.5s;
+    top: 55px;
+   z-index: 1;
+  }
+  
+  .nav_logo{
+      position: absolute;
+      margin-left: 10px;
+      z-index: 100;
+      left: 0;
+       
+  }
+  
+  .flex_block{
+   
+    padding: auto;
+    display: block;
+  }
+  }
+
